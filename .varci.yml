@@ -1,0 +1,83 @@
+# Suggest Var.CI for enforcing rules
+
+Here goes the description
+
+## Contributing
+
+Please see [CONTRIBUTING] for details.
+
+[CONTRIBUTING]:https://github.com/
+Notice: Undefined variable: github_url in /Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php on line 22
+
+Call Stack:
+    0.0002     363824   1. {main}() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:0
+    0.0407    4581968   2. Cilex\Application->run() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:5
+    0.0407    4581968   3. Symfony\Component\Console\Application->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/cilex/cilex/src/Cilex/Application.php:66
+    0.0427    4797128   4. Symfony\Component\Console\Application->doRun() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:123
+    0.0429    4797128   5. Symfony\Component\Console\Application->doRunCommand() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:192
+    0.0429    4797128   6. Symfony\Component\Console\Command\Command->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:844
+    0.0431    4799384   7. Thor\Console\Command\GithubPullRequestSubmissions->execute() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Command/Command.php:259
+    1.6086    7706744   8. Thor\Renderer\PlatesRenderer->render() /Users/jadb/Projects/XQTD/Var/thor/src/Console/Command/GithubPullRequestSubmissions.php:56
+    1.6086    7706744   9. League\Plates\Engine->render() /Users/jadb/Projects/XQTD/Var/thor/src/Renderer/PlatesRenderer.php:36
+    1.6102    7752952  10. League\Plates\Template\Template->render() /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Engine.php:277
+    1.6108    7791472  11. include('/Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php') /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Template/Template.php:118
+
+/blob/
+Notice: Undefined variable: github_branch in /Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php on line 22
+
+Call Stack:
+    0.0002     363824   1. {main}() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:0
+    0.0407    4581968   2. Cilex\Application->run() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:5
+    0.0407    4581968   3. Symfony\Component\Console\Application->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/cilex/cilex/src/Cilex/Application.php:66
+    0.0427    4797128   4. Symfony\Component\Console\Application->doRun() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:123
+    0.0429    4797128   5. Symfony\Component\Console\Application->doRunCommand() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:192
+    0.0429    4797128   6. Symfony\Component\Console\Command\Command->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:844
+    0.0431    4799384   7. Thor\Console\Command\GithubPullRequestSubmissions->execute() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Command/Command.php:259
+    1.6086    7706744   8. Thor\Renderer\PlatesRenderer->render() /Users/jadb/Projects/XQTD/Var/thor/src/Console/Command/GithubPullRequestSubmissions.php:56
+    1.6086    7706744   9. League\Plates\Engine->render() /Users/jadb/Projects/XQTD/Var/thor/src/Renderer/PlatesRenderer.php:36
+    1.6102    7752952  10. League\Plates\Template\Template->render() /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Engine.php:277
+    1.6108    7791472  11. include('/Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php') /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Template/Template.php:118
+
+/CONTRIBUTING.md
+
+
+<hr>
+
+<a href="https://var.ci/?utm_source=ghtemplates&utm_medium=gh&utm_content=blue&utm_campaign=inspirational-github-templates">
+  <img src="https://var.ci/img/readme_banner.png" width="980" height="300">
+</a>
+
+
+Notice: Undefined variable: list_of_projects in /Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php on line 45
+
+Call Stack:
+    0.0002     363824   1. {main}() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:0
+    0.0407    4581968   2. Cilex\Application->run() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:5
+    0.0407    4581968   3. Symfony\Component\Console\Application->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/cilex/cilex/src/Cilex/Application.php:66
+    0.0427    4797128   4. Symfony\Component\Console\Application->doRun() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:123
+    0.0429    4797128   5. Symfony\Component\Console\Application->doRunCommand() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:192
+    0.0429    4797128   6. Symfony\Component\Console\Command\Command->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:844
+    0.0431    4799384   7. Thor\Console\Command\GithubPullRequestSubmissions->execute() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Command/Command.php:259
+    1.6086    7706744   8. Thor\Renderer\PlatesRenderer->render() /Users/jadb/Projects/XQTD/Var/thor/src/Console/Command/GithubPullRequestSubmissions.php:56
+    1.6086    7706744   9. League\Plates\Engine->render() /Users/jadb/Projects/XQTD/Var/thor/src/Renderer/PlatesRenderer.php:36
+    1.6102    7752952  10. League\Plates\Template\Template->render() /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Engine.php:277
+    1.6108    7791472  11. include('/Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php') /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Template/Template.php:118
+
+
+Warning: Invalid argument supplied for foreach() in /Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php on line 45
+
+Call Stack:
+    0.0002     363824   1. {main}() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:0
+    0.0407    4581968   2. Cilex\Application->run() /Users/jadb/Projects/XQTD/Var/thor/bin/thor.php:5
+    0.0407    4581968   3. Symfony\Component\Console\Application->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/cilex/cilex/src/Cilex/Application.php:66
+    0.0427    4797128   4. Symfony\Component\Console\Application->doRun() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:123
+    0.0429    4797128   5. Symfony\Component\Console\Application->doRunCommand() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:192
+    0.0429    4797128   6. Symfony\Component\Console\Command\Command->run() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Application.php:844
+    0.0431    4799384   7. Thor\Console\Command\GithubPullRequestSubmissions->execute() /Users/jadb/Projects/XQTD/Var/thor/vendor/symfony/console/Command/Command.php:259
+    1.6086    7706744   8. Thor\Renderer\PlatesRenderer->render() /Users/jadb/Projects/XQTD/Var/thor/src/Console/Command/GithubPullRequestSubmissions.php:56
+    1.6086    7706744   9. League\Plates\Engine->render() /Users/jadb/Projects/XQTD/Var/thor/src/Renderer/PlatesRenderer.php:36
+    1.6102    7752952  10. League\Plates\Template\Template->render() /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Engine.php:277
+    1.6108    7791472  11. include('/Users/jadb/Projects/XQTD/Var/thor/src/Template/default.php') /Users/jadb/Projects/XQTD/Var/thor/vendor/league/plates/src/Template/Template.php:118
+
+
+*Last updated on: 2016-06-15 00:41:42*
