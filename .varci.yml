@@ -1,0 +1,48 @@
+filters:
+  - name: "a single suggestion / PR"
+    events: [GitHub.PullRequestEvent]
+    files: [README.md]
+    message: >
+      @{{ pull_request.user.login }}, please only add one suggestion per PR.
+    when:
+      - action = "opened" or action = "reopened"
+      - pull_request.additions > 1
+
+  - name: "the line contains a URL"
+    events: [GitHub.PullRequestEvent]
+    files: [README.md]
+    message: >
+      @{{ pull_request.user.login }}, suggestions should contain two links.
+    when:
+      - action = "opened" or action = "reopened"
+      - count(pull_request.diff_links.added) > 2
+
+  - name: "the URL is accessible (200 status code)"
+    events: [GitHub.PullRequestEvent]
+    files: [README.md]
+    message: >
+      @{{ pull_request.user.login }}, one of the links in the diff did not return
+      an HTTP status code of 200. Please check for broken links and/or redirects.
+      The first broken link is: {{ pull_request.diff_links.broken.0 }}
+    when:
+      - action = "opened" or action = "reopened"
+      - count(pull_request.diff_links.broken) > 0
+
+  - name: "the URL matches the URL in the PR's body"
+    events: [GitHub.PullRequestEvent]
+    files: [README.md]
+    message: >
+      @{{ pull_request.user.login }}, please include links you added in the diff
+      directly to the pull request body also to make it easier to check, thanks.
+    when:
+      - action = "opened" or action = "reopened"
+      - pull_request.body_links.added contains pull_request.diff_links.added
+
+  - name: "and the PR body has a minimum length of X"
+    events:
+      - GitHub.PullRequest
+    close: true
+    label: invalid
+    message: >
+      @{{pull_request.user.login}}, the pull request body should be longer than X.
+    when: (action = "opened" or action = "reopened") and length(pull_request.body) < 50
